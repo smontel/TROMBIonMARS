@@ -17,16 +17,17 @@ a {
 
 section {
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .alumni {
     width: 200px;
-    height: 600px;
-    float: left;
+    height: 30%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .alumni p {
@@ -34,24 +35,36 @@ section {
     text-align: center;
 }
 
-.border_left, .description, .border_right {
-    float: left;
-}
-
 .border_left, .border_right {
-    width: 15px;
-    border-radius: 50%;
+    width: 10px;
+    height: 100%;
+    border-radius: 5%;
 }
 
 .border_left {
     background-color: rgba(236, 77, 123, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .border_right {
     background-color: rgba(73, 139, 171, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.description {
+  width: 100%;
+  height: 150px;
 }
 
+.picture_container {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+}
 .picture {
-    width: auto;
-    height: 20%;
+  width: 100%;
+  height: auto;
 }
