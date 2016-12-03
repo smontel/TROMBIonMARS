@@ -153,6 +153,7 @@ body {
   /*Find social row on style_semi_flat_social_row.css*/
 .name {
   font-size: 1.3em;
+  margin: 10px;
 }
 .card:hover .name span {
   color: 	#dd6929;
@@ -163,7 +164,25 @@ body {
 .card:hover .bio span {
   color: 	#4AC651;
 }
-
+.links_row {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.links_row a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: #E2E2E2;
+    padding: 10px;
+    font-size: 1.7em;
+}
+.icon-link:hover {
+    color:#ec4d7b;
+}
+.icon-asl:hover {
+    color:	#498bab;
+}
 
 /* MEDIA QUERIES */
 
