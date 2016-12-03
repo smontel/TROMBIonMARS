@@ -16,7 +16,7 @@ const pinks = document.getElementsByClassName("pinkborder");
         reds[i].addEventListener("mouseover", function() {
 
             for(let i=0; i<cards.length; i++){
-              cards[i].classList.remove("red");
+              reds[i].classList.remove("red");
             }
             this.classList.toggle("red");
 
@@ -26,7 +26,7 @@ const pinks = document.getElementsByClassName("pinkborder");
         pinks[i].addEventListener("mouseover", function() {
 
             for(let i=0; i<cards.length; i++){
-              cards[i].classList.remove("pink");
+              pinks[i].classList.remove("pink");
             }
 
             this.classList.toggle("pink");
