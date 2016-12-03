@@ -1,7 +1,9 @@
 body {
   background-color: #262729;
 }
-
+.nav>ul {
+    display: flex;
+}
 .card {
   padding: 0;
   height: 70%;
@@ -35,7 +37,7 @@ body {
 }
 
 .red {
-  border: 3px solid #d50f1c;
+  border: 3px solid white;
   animation: redanim linear 3.5s;
   animation-iteration-count: infinite;
 }
