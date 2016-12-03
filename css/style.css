@@ -2,103 +2,163 @@
     font-family: 'lato';
     src: url('fonts/Lato-Regular.ttf');
 }
+
 body {
-  background-color: #262729;
-  font-family: lato, sans-serif;
+    background-color: #262729;
+    font-family: lato, sans-serif;
 }
+
 .nav>ul {
     display: flex;
+    z-index: 1000;
 }
-.card {
-  padding: 0;
-  height: 70%;
+div>#intro {
+  height: 130px;
+  color: lightgrey;
+  margin-top: 10vh;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial,cursive;
 }
-.pinkborder {
-  width: 100%;
-  height: 100%;
-}
-.redborder {
-  width: 100%;
-  height: 100%;
-}
-.main_div {
-  position: relative;
-  margin: 80px 20px 0 20px;
-  width: auto;
-  height: 800px;
-  align-content: center;
 
+hr.horizontal {
+  width: 70%;
+  height: 70px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.horizontal:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.main_div {
+    position: relative;
+    margin: 80px 20px 0 20px;
+    width: auto;
+    height: 800px;
+    align-content: center;
     padding: 0;
 }
+.card {
+    padding: 0;
+    height: 70%;
+}
+
+.pinkborder {
+    width: 100%;
+    height: 100%;
+}
+
+.whiteborder {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 /* LE CADRE */
 
-
 .ring {
-  height: 100%;
-  position: absolute;
-  mix-blend-mode: screen;
-  background: transparent;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: screen;
+    background: transparent;
 }
 
-.red {
-  border: 3px solid white;
-  animation: redanim linear 3.5s;
-  animation-iteration-count: infinite;
+.white {
+    border: 3px solid white;
+    animation: redanim linear 3.5s;
+    animation-iteration-count: infinite;
 }
+
 .pink {
-  border: 3px solid 	#ec4d7b;
-  animation: greenanim linear 4s;
-  animation-iteration-count: infinite;
+    border: 3px solid #ec4d7b;
+    animation: greenanim linear 4s;
+    animation-iteration-count: infinite;
 }
+
 .blue {
-  border: 3px solid #498bab;
-  animation: blueanim linear 4.5s;
-  animation-iteration-count: infinite;
+    border: 3px solid #498bab;
+    animation: blueanim linear 4.5s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes redanim{
-  0%   {transform:  rotate(0deg)  ;}
-  25%  {transform:  rotate(0.5deg) ;}
-  50%  {transform:  rotate(1deg);}
-  75%  {transform:  rotate(0.5deg);}
-  100% {transform:  rotate(0deg);}
+@keyframes whiteanim {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0.5deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    75% {
+        transform: rotate(0.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-@keyframes greenanim{
-  0%   {transform:  rotate(0.5deg)  ;}
-  25%  {transform:  rotate(0deg) ;}
-  50%  {transform:  rotate(-0.5deg) ;}
-  75%  {transform:  rotate(0deg) ;}
-  100% {transform:  rotate(0.5deg) ;}
+@keyframes greenanim {
+    0% {
+        transform: rotate(0.5deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-0.5deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0.5deg);
+    }
 }
 
-@keyframes blueanim{
- 0%   {transform:  rotate(-1deg)  ;}
-  25%  {transform:  rotate(-0.5deg) ;}
-  50%  {transform:  rotate(0deg) ;}
-  75%  {transform:  rotate(-0.5deg) ;}
-  100% {transform:  rotate(-1deg) ;}
+@keyframes blueanim {
+    0% {
+        transform: rotate(-1deg);
+    }
+    25% {
+        transform: rotate(-0.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-0.5deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
 }
+
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
-  .grid .w-3-12 {
-      width: calc(100%/3);
+    .grid .w-3-12 {
+        width: calc(100%/3);
     }
 }
 
 @media only screen and (max-width: 900px) {
-  .grid .w-3-12 {
-      width: 50%;
+    .grid .w-3-12 {
+        width: 50%;
     }
 }
-
-
-
-/* MAIN DIV on retire ça
-display: flex;
-flex-wrap: wrap;
-width:auto;
-text-align: center; */
