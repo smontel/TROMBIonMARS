@@ -228,6 +228,8 @@ code {
     list-style-type: none;
     width: 100%;
     position: absolute;
+
+    top: 15px;
     display: flex;
     margin: 0;
     padding: 0;
@@ -326,7 +328,7 @@ code {
 .grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
     width: calc(100%/4);
     float: left;
-    padding: 10px;
+  /*  padding: 10px; */
 }
 /*--4/12--*/
 .grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
