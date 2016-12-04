@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { // Code relying on the DOM
     const cards = document.getElementsByClassName("card");
-const reds = document.getElementsByClassName("redborder");
+const whites = document.getElementsByClassName("whiteborder");
 const pinks = document.getElementsByClassName("pinkborder");
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("mouseover", function() {
@@ -12,13 +12,13 @@ const pinks = document.getElementsByClassName("pinkborder");
         })
     };
 
-    for (let i = 0; i < reds.length; i++) {
-        reds[i].addEventListener("mouseover", function() {
+    for (let i = 0; i < whites.length; i++) {
+        whites[i].addEventListener("mouseover", function() {
 
             for(let i=0; i<cards.length; i++){
-              reds[i].classList.remove("red");
+              whites[i].classList.remove("white");
             }
-            this.classList.toggle("red");
+            this.classList.toggle("white");
 
         })
     };

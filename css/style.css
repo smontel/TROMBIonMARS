@@ -10,6 +10,44 @@ body {
 
 .nav>ul {
     display: flex;
+    z-index: 1000;
+}
+div>#intro {
+  height: 130px;
+  color: lightgrey;
+  margin-top: 10vh;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial,cursive;
+}
+
+hr.horizontal {
+  width: 70%;
+  height: 70px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.horizontal:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.main_div {
+    position: relative;
+    margin: 80px 20px 0 20px;
+    width: auto;
+    height: 800px;
+    align-content: center;
+    padding: 0;
 }
 
 .card {
@@ -20,6 +58,7 @@ body {
 .pinkborder {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
 }
 
 .redborder {
@@ -36,6 +75,14 @@ body {
     padding: 0;
 }
 
+.whiteborder {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* LE CADRE */
+
 
 /* LE CADRE */
 
@@ -46,7 +93,8 @@ body {
     background: transparent;
 }
 
-.red {
+
+.white {
     border: 3px solid white;
     animation: redanim linear 3.5s;
     animation-iteration-count: infinite;
@@ -64,7 +112,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes redanim {
+@keyframes whiteanim {
     0% {
         transform: rotate(0deg);
     }
@@ -185,7 +233,10 @@ body {
 }
 .icon-asl:hover {
     color:	#498bab;
+=======
+>>>>>>> master
 }
+
 
 /* MEDIA QUERIES */
 
@@ -200,7 +251,6 @@ body {
         width: 50%;
     }
 }
-
 
 /* MAIN DIV on retire ça
 display: flex;
