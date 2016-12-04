@@ -91,7 +91,7 @@ hr.horizontal:before {
     height: 100%;
 }
 .grid {
-  overflow: hidden !important;
+  overflow: inherit !important;
 }
 
 /* LE CADRE */
