@@ -17,6 +17,7 @@ body {
 }
 .logo {
 background-color: transparent;
+position: absolute;
 }
 .nav>ul {
     display: flex;
