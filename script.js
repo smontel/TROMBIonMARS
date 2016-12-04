@@ -8,9 +8,11 @@ const alus = document.getElementsByClassName("alumni");
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", function() {
             for (let i = 0; i < cards.length; i++) {
+              cards[i].classList.remove("blue");
                 cards[i].classList.remove("selected");
             }
             this.classList.toggle("selected");
+            this.classList.toggle("blue");
         });
     }
 
