@@ -330,12 +330,14 @@ footer>ul {
         box-sizing: border-box;
     }
     .card {
-        width: 100%;
-        border:none;
-    }
-    .card.selected {
-        height: 73vh;
-    }
+           width: 100%;
+           height: 53vh;
+           background-color: black;
+           transition: height 1s ease;
+       }
+       .card.selected {
+           height: 73vh;
+       }
     .social_row {
         visibility: hidden;
         opacity: 0;
