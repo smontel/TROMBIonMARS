@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() { // Code relying on th
     const cards = document.getElementsByClassName("card");
     const whites = document.getElementsByClassName("whiteborder");
     const pinks = document.getElementsByClassName("pinkborder");
-
+const alus = document.getElementsByClassName("alumni");
 
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", function() {
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() { // Code relying on th
         });
     }
 
-
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("mouseover", function() {
           for(let i=0; i<cards.length; i++){
@@ -24,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() { // Code relying on th
             this.classList.toggle("blue");
         })
     };
+
 
     for (let i = 0; i < whites.length; i++) {
         whites[i].addEventListener("mouseover", function() {
@@ -45,5 +45,13 @@ document.addEventListener("DOMContentLoaded", function() { // Code relying on th
             this.classList.toggle("pink");
 
         })
-    }
+    }for (let i = 0; i < alus.length; i++) {
+        alus[i].addEventListener("mouseover", function() {
+          for(let i=0; i<alus.length; i++){
+            alus[i].classList.remove("alu");
+          }
+
+            this.classList.toggle("alu");
+        })
+    };
 });
