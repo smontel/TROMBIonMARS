@@ -79,7 +79,7 @@ hr.horizontal:before {
 
 .main_div {
     position: relative;
-    margin: 80px 20px 0 20px;
+    margin: 60px 0 0 0;
     width: auto;
     height: 800px;
     align-content: center;
@@ -90,7 +90,9 @@ hr.horizontal:before {
     width: 100%;
     height: 100%;
 }
-
+.grid {
+  overflow: hidden !important;
+}
 
 /* LE CADRE */
 
@@ -329,9 +331,11 @@ footer>ul {
     }
     .card {
         width: 100%;
-        height: 53vh;
-        background-color: black;
-        transition: height 1s ease;
+        border:none;
+    }
+    .card {
+        width: 100%;
+        border: 1px solid white;
     }
     .card.selected {
         height: 73vh;
@@ -366,5 +370,32 @@ footer>ul {
         visibility: visible;
         opacity: 1;
 
+    }
+    .show-menu {
+        display: block;
+        width: 100%;
+    }
+    .nav>ul {
+        display: none;
+    }
+    .clearnav{
+      height:0;
+      padding: 0;
+    }
+    .main_div{
+        margin:0;
+        height:908px;
+        box-sizing: border-box;
+    }
+    div>#intro{
+      margin-top: 0;
+    }
+    footer{
+      font-size: 0.7em;
+      line-height: normal;
+    }
+    li{
+      display: inline-block;
+>>>>>>> origin/sylvain
     }
 }

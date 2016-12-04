@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() { // Code relying on th
     const pinks = document.getElementsByClassName("pinkborder");
 const alus = document.getElementsByClassName("alumni");
 
+
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", function() {
             for (let i = 0; i < cards.length; i++) {
