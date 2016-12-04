@@ -23,6 +23,9 @@ position: absolute;
     display: flex;
     z-index: 1000;
 }
+.grid *[class*="w-"], .grid *[class*="-twelve"] {
+  padding: 0;
+}
 div>#intro {
   height: 130px;
   color: lightgrey;
