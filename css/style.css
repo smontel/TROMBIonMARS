@@ -64,7 +64,7 @@ hr.horizontal:before {
 
 .card {
     padding: 0;
-    height: 80%;
+    height: 83%;
 }
 
 .pinkborder {
@@ -315,6 +315,15 @@ footer>ul {
 }
 
 @media only screen and (max-width:660px) {
+.logo {
+  display: none;
+}
+.nav>ul {
+  top:-10px;
+}
+.grid *[class*="w-"], .grid *[class*="-twelve"] {
+  padding: 0;
+}
     .picture {
         max-height: 400px;
         width: auto;
@@ -331,12 +340,12 @@ footer>ul {
     }
     .card {
            width: 100%;
-           height: 53vh;
+           height: 55%;
            background-color: black;
            transition: height 1s ease;
        }
        .card.selected {
-           height: 73vh;
+           height: 75%;
        }
     .social_row {
         visibility: hidden;
