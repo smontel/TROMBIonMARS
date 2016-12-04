@@ -333,10 +333,6 @@ footer>ul {
         width: 100%;
         border:none;
     }
-    .card {
-        width: 100%;
-        border: 1px solid white;
-    }
     .card.selected {
         height: 73vh;
     }
@@ -396,6 +392,5 @@ footer>ul {
     }
     li{
       display: inline-block;
->>>>>>> origin/sylvain
     }
 }
