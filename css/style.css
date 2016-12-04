@@ -3,24 +3,34 @@
     src: url('../fonts/Lato-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
     background-color: #262729;
     font-family: lato, sans-serif;
 }
-
+.logo {
+background-color: transparent;
+position: absolute;
+}
 .nav>ul {
     display: flex;
     z-index: 1000;
 }
-
 div>#intro {
-    height: 130px;
-    color: lightgrey;
-    margin-top: 10vh;
-    padding-top: 40px;
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial, cursive;
+  height: 130px;
+  color: lightgrey;
+  margin-top: 10vh;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Raleway',sans-serif;
 }
 
 hr.horizontal {
@@ -248,10 +258,25 @@ hr.horizontal:before {
 
 .icon-asl:hover {
     color: #498bab;
-    =======>>>>>>>master
 }
-
-
+footer  {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+  width: 100%;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #2f3036;
+  display: flex;
+  justify-content: center;
+}
+footer>ul {
+  float: right;
+}
+#liensfooter {
+  margin-right: 15px;
+}
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
@@ -324,10 +349,3 @@ hr.horizontal:before {
 
     }
 }
-
-
-/* MAIN DIV on retire ça
-display: flex;
-flex-wrap: wrap;
-width:auto;
-text-align: center; */
