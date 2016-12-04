@@ -133,6 +133,9 @@ body {
     color: #E2E2E2;
     text-align: center;
 }
+.alumni:hover p {
+  color: white;
+}
 
 .description {
     width: 100%;
