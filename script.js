@@ -1,7 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() { // Code relying on the DOM
+
     const cards = document.getElementsByClassName("card");
-const whites = document.getElementsByClassName("whiteborder");
-const pinks = document.getElementsByClassName("pinkborder");
+    const whites = document.getElementsByClassName("whiteborder");
+    const pinks = document.getElementsByClassName("pinkborder");
+
+
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", function() {
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.remove("selected");
+            }
+            this.classList.toggle("selected");
+        });
+    }
+
+
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("mouseover", function() {
           for(let i=0; i<cards.length; i++){
