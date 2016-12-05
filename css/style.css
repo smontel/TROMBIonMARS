@@ -4,36 +4,40 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 body {
     background-color: #262729;
     font-family: lato, sans-serif;
 }
+
 .logo {
-background-color: transparent;
-position: absolute;
+    background-color: transparent;
+    position: absolute;
 }
+
 .nav>ul {
     display: flex;
     z-index: 1000;
 }
+
 .grid *[class*="w-"], .grid *[class*="-twelve"] {
-  padding: 0;
+    padding: 0;
 }
+
 div>#intro {
-  height: 130px;
-  color: lightgrey;
-  margin-top: 10vh;
-  padding-top: 40px;
-  text-align: center;
-  font-size: 45px;
-  font-family: 'Raleway',sans-serif;
+    height: 130px;
+    color: lightgrey;
+    margin-top: 10vh;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
 }
 
 hr.horizontal {
@@ -75,11 +79,6 @@ hr.horizontal:before {
     height: 100%;
 }
 
-.redborder {
-    width: 100%;
-    height: 100%;
-}
-
 .main_div {
     position: relative;
     margin: 60px 0 0 0;
@@ -93,11 +92,10 @@ hr.horizontal:before {
     width: 100%;
     height: 100%;
 }
-.grid {
-  overflow: inherit !important;
-}
 
-/* LE CADRE */
+.grid {
+    overflow: inherit !important;
+}
 
 
 /* LE CADRE */
@@ -129,10 +127,11 @@ hr.horizontal:before {
     animation: blueanim linear 3.5s;
     animation-iteration-count: infinite;
 }
+
 .alu {
-  box-sizing: border-box;
-  animation: aluanim linear 3.5s;
-  animation-iteration-count: infinite;
+    box-sizing: border-box;
+    animation: aluanim linear 3.5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes whiteanim {
@@ -190,22 +189,23 @@ hr.horizontal:before {
 }
 
 @keyframes aluanim {
-  0% {
-      transform: rotate(0.25deg);
-  }
-  25% {
-      transform: rotate(0.25deg);
-  }
-  50% {
-      transform: rotate(0.25deg);
-  }
-  75% {
-      transform: rotate(0.25deg);
-  }
-  100% {
-      transform: rotate(0.25deg);
-  }
+    0% {
+        transform: rotate(0.25deg);
+    }
+    25% {
+        transform: rotate(0.25deg);
+    }
+    50% {
+        transform: rotate(0.25deg);
+    }
+    75% {
+        transform: rotate(0.25deg);
+    }
+    100% {
+        transform: rotate(0.25deg);
+    }
 }
+
 
 /*ALUMNI ARTICLE*/
 
@@ -285,30 +285,37 @@ hr.horizontal:before {
 .icon-asl:hover {
     color: #498bab;
 }
-footer  {
-  font-family: 'Raleway', sans-serif;
-  margin-top: 30px;
-  width: 100%;
-  bottom: 0;
-  height: 30px;
-  line-height: 30px;
-  color: #fff;
-  background-color: #2f3036;
-  display: flex;
-  justify-content: center;
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #2f3036;
+    display: flex;
+    justify-content: center;
 }
+
 footer>ul {
-  float: right;
+    float: right;
 }
+
 #liensfooter {
-  margin-right: 15px;
+    margin-right: 15px;
 }
+
+
 /* MEDIA QUERIES */
+
 @media only screen and (min-width: 1750px) {
-    .card  {
+    .card {
         height: 88%;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .grid .w-3-12 {
         width: calc(100%/3);
@@ -322,15 +329,15 @@ footer>ul {
 }
 
 @media only screen and (max-width:660px) {
-.logo {
-  display: none;
-}
-.nav>ul {
-  top:-10px;
-}
-.grid *[class*="w-"], .grid *[class*="-twelve"] {
-  padding: 0;
-}
+    .logo {
+        display: none;
+    }
+    .nav>ul {
+        top: -10px;
+    }
+    .grid *[class*="w-"], .grid *[class*="-twelve"] {
+        padding: 0;
+    }
     .picture {
         max-height: 400px;
         width: auto;
@@ -346,14 +353,14 @@ footer>ul {
         box-sizing: border-box;
     }
     .card {
-           width: 100%;
-           height: 55%;
-           background-color: black;
-           transition: height 1s ease;
-       }
-       .card.selected {
-           height: 75%;
-       }
+        width: 100%;
+        height: 55%;
+        background-color: black;
+        transition: height 1s ease;
+    }
+    .card.selected {
+        height: 75%;
+    }
     .social_row {
         visibility: hidden;
         opacity: 0;
@@ -361,8 +368,7 @@ footer>ul {
     }
     .selected .social_row {
         visibility: visible;
-        opacity : 1;
-
+        opacity: 1;
     }
     .bio {
         visibility: hidden;
@@ -372,8 +378,6 @@ footer>ul {
     .selected .bio {
         opacity: 1;
         visibility: visible;
-
-
     }
     .links_row {
         visibility: hidden;
@@ -383,7 +387,6 @@ footer>ul {
     .selected .links_row {
         visibility: visible;
         opacity: 1;
-
     }
     .show-menu {
         display: block;
@@ -392,23 +395,23 @@ footer>ul {
     .nav>ul {
         display: none;
     }
-    .clearnav{
-      height:0;
-      padding: 0;
+    .clearnav {
+        height: 0;
+        padding: 0;
     }
-    .main_div{
-        margin:0;
-        height:908px;
+    .main_div {
+        margin: 0;
+        height: 908px;
         box-sizing: border-box;
     }
-    div>#intro{
-      margin-top: 0;
+    div>#intro {
+        margin-top: 0;
     }
-    footer{
-      font-size: 0.7em;
-      line-height: normal;
+    footer {
+        font-size: 0.7em;
+        line-height: normal;
     }
-    li{
-      display: inline-block;
+    li {
+        display: inline-block;
     }
 }
