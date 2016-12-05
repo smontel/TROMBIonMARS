@@ -304,7 +304,11 @@ footer>ul {
   margin-right: 15px;
 }
 /* MEDIA QUERIES */
-
+@media only screen and (min-width: 1750px) {
+    .card  {
+        height: 88%;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .grid .w-3-12 {
         width: calc(100%/3);
